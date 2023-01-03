@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class stdinfo
+        {
+            constructor()
+            {
+                var name;
+                var mark;
+            }
+            getname()
+            {
+                return this.name
+            }
+            infoname(name)
+            {
+                this.name=name;
+            }
+            getmark()
+            {
+                return this.mark
+            }
+            infomark(mark)
+            {
+                this.mark=mark;
+            }
+        }
+        var ob1=new stdinfo()
+        ob1.infoname("Levai")
+        ob1.infomark(200)
+        document.write(ob1.getname()+" "+ob1.getmark())
+    </script>
+</body>
+</html>

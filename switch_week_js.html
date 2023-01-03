@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Enter Number B/W 1-7: <input type="number" id="week_num">
+   <button onclick="weeks()">Day</button>
+   <p id="day"></p>
+   </body>
+
+   <script>
+    function weeks( )
+    {
+        var num=Number(document.getElementById("week_num").value);
+        var days;
+        switch(num)
+        {
+            case 1:
+                days="Sunday";
+                break;
+            case 2: 
+             days="Monday";
+            break;
+            case 3 : 
+             days="Tuesday";
+             break;
+             case 4 :
+                days="Wednesday";
+                break;
+            case 5 :
+                days="Thursday";
+                break;
+            case 6 :
+                days="Friday";
+                break;
+            case 7 :
+                days="Saturday";
+                break ;
+            default :
+                days="Input Value Wrong!";
+        }
+        document.getElementById("day").innerHTML=days;
+    }
+   </script>
+
+</html>

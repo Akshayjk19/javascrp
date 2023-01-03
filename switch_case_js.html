@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Fruit:<input type="text" id="frt">
+    <button onclick="disp()">Display</button>
+    <p id="dis"></p>
+    <script>
+        function disp()
+        {
+            var val;
+            var ft=document.getElementById("frt").value;
+
+            switch (ft)
+            {
+                case "Apple" :
+                    val="Apple is Good";
+                    break;
+                 case "Banana" :
+                    val="Banana is Good";
+                    break;
+                case "Pineapple" :
+                    val="Pineapple is Good";
+                    break;
+                case "Orange" :
+                    val="Orange is Good";
+                    break;
+                    default:
+                        val="No Input";
+
+
+
+            }
+            document.getElementById('dis').innerHTML=val;
+        }
+    </script>
+</body>
+</html>
